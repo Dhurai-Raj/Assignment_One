@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.o,users-scalable=no">
+
+<!--title-------------------->
+<title>Blog Section</title>
+
+<!---stylesheet-------->
+<link rel="stylesheet" href="style.css"/>
+
+<!----fav icon--------->
+<link rel="shirtcut icon" href="images/favicon.ico"/>
+
+<!----poppings---------->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+ 
+  <style>
+  { margin: 0px;
+    padding: 0px;
+    font-family: popping;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+u1{
+    list-style: none;
+
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+
+/*--blog--------------------*/
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+  header{
+    background-color: #009195;
+    height:66px;
+  }
+    
+    header * {
+      color:white;
+    } 
+
+  header.logo{
+    float:left;
+    border: 1px solid ;
+    height:inherit;
+    margin-left: 2em;
+    font-family: 'candal',serif;
+ 
+  }
+  
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color:#05aeb4;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color:#0a9095;
+}
+
+
+
+
+.blog-heading{
+   
+  color: red;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px ;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+
+    width: 350px;
+    background-color: aliceblue;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blog-img{
+    width: 100%;
+    height:100%;
+}
+.blog-img img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.blog-text .blog-title:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+.blog-textp{
+    color: #ececec;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a:hover{
+    color: #f33c3c ;
+    transition: all ease 0.3s;
+
+}
+@media(max-width:1250px){
+    .blog-box{
+        width: 300px;
+    }
+}
+@media(max-width:1100px){
+    .blog-box{
+        width: 70%;
+    }
+}
+@media(max-width:550px){
+    .blog-box{
+        margin: 20px 10px;
+        width:100%;
+    }
+    #blog{
+        padding: 20px;
+    }
+}
+
+
+/* Footer */
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+  </style>
+
+
+</head>
+<body>
+  <header>
+  
+  <div class="logo">
+  
+     <h1> BLOG </h1>
+    </div>
+    
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+</header>
+  
+  
+    <!--==Blog-section=================-->
+       <section id="blog"></section> 
+        
+
+       <!----heading-------------------->
+
+        
+    
+          <div class="blog-heading">
+            
+            <h2>RECENT POSTS</h2>
+          </div>
+        
+
+    <!--blog container------------------>
+       <div class="blog-container">
+
+       <!----box -1--------------------->
+       <div class="blog-box">
+
+          <!--img------------------------->
+
+          <div class="blog-img">
+            <img src="images/geothermal.jpg " alt="Blog">
+          </div>
+
+          <!--text--------------------------->
+          <div class="blog-text">
+            <span>25 December 2023 / Geothermal</span>
+            <a href="#"  class="blog-title"> What can give the energy for long term without any harmful gases production?</a>
+            <p>Geothermal resources are reservoirs of hot water that exist or are human made at varying temperatures and depths below the earth's surface. Wells, ranging from a few feet to several miles deep, can be drilled into underground reservoirs to tap steam and very hot water that can be brought to the surface for use in a variety of applications, including electricity generation, direct use, and heating and cooling.</p>
+            <a href="https://www.britannica.com/science/geothermal-energy">Read More</a>  
+        </div>
+       </div>
+    </div>
+    <div class="blog-container">
+       <!----box -2--------------------->
+       <div class="blog-box">
+
+        <!--img------------------------->
+
+        <div class="blog-img">
+          <img src="images/blitzar.jpg " alt="Blog">
+        </div>
+
+        <!--text--------------------------->
+        <div class="blog-text">
+          <span>25 December 2023 / blitzar</span>
+          <a href="#"  class="blog-title">When an overweight neutron star slows down enough to collapse into a black hole. </a>
+          <p>In astronomy, blitzars are a hypothetical type of neutron star, specifically pulsars that can rapidly collapse into black holes if their spinning slows down. Heino Falcke and Luciano Rezzolla proposed these stars in 2013 as an explanation for fast radio bursts</p>
+          <a href="https://arxiv.org/abs/1307.1409">Read More</a>  
+      </div>
+     </div>
+    </div>
+
+
+    <div class="blog-container">
+       <!----box -3--------------------->
+       <div class="blog-box">
+         
+        <!--img------------------------->
+
+        <div class="blog-img">
+          <img src="images/nanozymes.jpg " alt="Blog">
+        </div>
+
+        <!--text--------------------------->
+        <div class="blog-text">
+          <span>25 December 2023 / nanozymes</span>
+          <a href="#"  class="blog-title">A series of nanomaterials with enzyme-mimetic activities that can proceed with the catalytic reactions of natural enzymes</a>
+          <p> Nanozymes have emerged to be a rapid-growing and diverse field attracting hundreds of research groups globally resulting in thousands of publications.[1-6] Such a growth testifies the broad interest in using nanomaterials to enhance and even replace natural enzymes for various applications from biosensors to therapeutics</p>
+          <a href="https://jnanobiotechnology.biomedcentral.com/articles/10.1186/s12951-022-01295-y">Read More</a>  
+      </div>
+    </div>
+    </div>
+    
+      <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">copyright</p>
+        </footer>
+    </div>
+    
+    
+         
+    
+
+
+
+
+
+
+
+
+    </body>
+</html>
